@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício C</title>
+</head>
+<body>
+    <script>
+        function inverterOrdemPalavras(str) {
+  const palavras = str.split(" ");
+  const palavrasReversas = palavras.reverse();
+  return palavrasReversas.join(" ");
+}
+
+console.log(inverterOrdemPalavras("Olá, mundo!")); // Deverá imprimir "mundo! Olá,"
+console.log(inverterOrdemPalavras("JavaScript é incrível")); // Deverá imprimir "incrível é JavaScript"
+
+    </script>
+</body>
+</html>

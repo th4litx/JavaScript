@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício A</title>
+</head>
+<body>
+    <script>
+        function ehPalindromo(str) {
+  str = str.toLowerCase().replace(/\s/g, ""); // Converter para minúsculas e remover espaços
+  
+  const reversedStr = str.split("").reverse().join("");
+  
+  return str === reversedStr;
+}
+
+console.log(ehPalindromo("arara"));      // Deverá imprimir true
+console.log(ehPalindromo("javascript")); // Deverá imprimir false
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício B</title>
+</head>
+<body>
+    <script>
+        function contarLetra(str, letra) {
+  str = str.toLowerCase();
+  letra = letra.toLowerCase();
+  
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === letra) {
+      count++;
+    }
+  }
+  
+  return count;
+}
+
+console.log(contarLetra("banana", "a")); // Deverá imprimir 3
+console.log(contarLetra("programação", "o")); // Deverá imprimir 2
+
+    </script>
+</body>
+</html>
